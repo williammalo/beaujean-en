@@ -1,1 +1,31 @@
-<footer><ul><li>S.A.A.Q.</li><li>Transport Quebec - Weights & Measures</li><li>Commission de Transport du Quebec</li><li>Association du Camionnage du Quebec</li><li>Club des Professionnel du Transport du Quebec</li><li>Comite Technique de Camionnage du Quebec</li><li>Club de Trafic de Montreal</li><li>Private Motor Truck Council of Canada</li><li>Ontario Trucking Association</li><li>Canadian Trucking Alliance</li></ul><p>&copy; <?php echo Date(Y) ?> Location Beaujean<br>conception: <a href="http://maloweb.com">maloweb.com<a></p></footer>
+</div>
+<footer><a href="//saaq.gouv.qc.ca" target="_blank" class="footlink">
+    <div class="txt">S.A.A.Q.</div><img src="logo/saaq.gif"/></a><a href="//www.mtq.gouv.qc.ca" target="_blank" class="footlink">
+    <div class="txt">Transport Quebec - Weights & Measures</div><img src="logo/mtq.gif"/></a><a href="//www.ctq.gouv.qc.ca" target="_blank" class="footlink">
+    <div class="txt">Commission de Transport du Quebec</div><img src="logo/ctq.gif"/></a><a href="//carrefour-acq.org" target="_blank" class="footlink">
+    <div class="txt">Association du Camionnage du Quebec</div><img src="logo/acq.jpg"/></a><a href="//cptq.ca" target="_blank" class="footlink">
+    <div class="txt">Club des Professionnel du Transport du Quebec</div><img src="logo/cptq.jpg"/></a><a href="//ctcq.ca" target="_blank" class="footlink">
+    <div class="txt">Comite Technique de Camionnage du Quebec</div><img src="logo/ctcq.jpg"/></a><a href="//tcmtl.com" target="_blank" class="footlink">
+    <div class="txt">Club de Trafic de Montreal</div><img src="logo/tcmtl.png"/></a><a href="//pmtc.ca" target="_blank" class="footlink">
+    <div class="txt">Private Motor Truck Council of Canada</div><img src="logo/pmtc.gif"/></a><a href="//ontruck.org" target="_blank" class="footlink">
+    <div class="txt">Ontario Trucking Association</div><img src="logo/ontruck.gif"/></a><a href="//cantruck.ca" target="_blank" class="footlink">
+    <div class="txt">Canadian Trucking Alliance</div><img src="logo/cantruck.jpg"/></a>
+  <p>&copy; <script>document.write((new Date).getFullYear())</script> Beaujean Leasing<br>Website by: <a href="http://maloweb.com">maloweb.com</a></p>
+</footer><script>ie=false</script>
+<!--[if lt IE 9]>
+<script>ie=true</script>
+<![endif]-->
+<script>
+  index=0
+  images=document.getElementById("slide").getElementsByTagName("img")
+  slideshow=function(){
+  for(i=images.length;i--;)images[i].style.opacity=0
+  images[index].style.opacity=1
+  if(ie){
+   for(i=images.length;i--;)images[i].style.visibility="hidden"
+   images[index].style.visibility="visible"
+  }
+  index=(index+1)%images.length
+  }
+  setInterval(slideshow,5000)
+</script>
